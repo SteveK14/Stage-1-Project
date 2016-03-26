@@ -1,0 +1,88 @@
+/* I know it is easier to include all of the notes into one class like Andy's Example but in order to play around with
+   CSS's aesthetics a bit more I decided to include more classes for the separate lessons*/
+
+
+body {             /* general parameters for the main body of the web page. */
+  background: white;
+  max-width: 75%;
+  font-family: arial;
+  margin: 0 auto; 
+  font-size: 1.6em;
+}                 
+
+h1 {             /* parameters for first category headings */
+  font-family: tahoma;
+  color: black; 
+  text-decoration: underline;
+}
+
+
+h2 {            /* parameters for second category headings*/
+  color: white;
+  font-family: "new courier", monospace;
+}
+
+p {           /* general padding for paragraphs */
+  padding: 15px;
+}
+
+ul {          /* remove points and add some spacing for links */
+  list-style-type: none;
+  padding: 10px;
+}
+
+.lesson1 {     /* Settings for lesson 1.1 */
+  background-color: #008000;
+  border-radius: 50px;
+  padding: 9px;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.notegroup1 {    /* settings for lesson 1.1 subsections */
+  background-color: #99cc99;
+  border-radius: 50px;
+  text-align: left;
+  color: black;
+}
+
+.lesson2 {      /* settings for lesson 1.2 */
+  background-color: #ff0000;
+  border-radius: 50px;
+  padding: 15px;
+  margin: 9px auto;
+  text-align: center;
+}
+
+.notegroup2 {        /* settings for lesson 1.2 subsections */
+  background-color: #ff9999;
+  border-radius: 50px;
+  color: black;  
+  text-align: left;
+}
+
+.lesson3 {          /* settings for lesson 1.3 */
+  background-color: #4169e1;
+  border-radius: 50px;
+  padding: 15px;
+  margin: 9px auto;
+  text-align: center;
+}
+
+.notegroup3 {         /* settings for lesson 1.3 subsections */
+  background-color: #b3c3f3;
+  border-radius: 50px;
+  color: black; 
+  text-align: left;
+}
+
+.notetitle {        /* settings for lesson subheadings*/
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.important {        /* highlight important notes in text */
+  font-style: italic;
+}
+
