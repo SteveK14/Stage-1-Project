@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Notes</title>
+  <link rel="stylesheet" href="Stage-1-Project.css">
+</head>
+<body>
+  <section class="Table"> <!-- Start of Table of Contents, based on Example's Table of Contents -->
+    <h1>Table of Contents</h1>
+    <ol>
+      <li><a href="#lesson-1.1">Lesson 1.1: The Basics of the Web and HTML</a>
+        <ul>
+          <li><a href="#lesson-1.1.1">World Wide Web</a></li>
+          <li><a href="#lesson-1.1.2">More About HTML</a></li>
+          <li><a href="#lesson-1.1.3">Dumb Computers</a></li>
+          <li><a href="#lesson-1.1.4">More Resources</a></li>
+        </ul>
+      </li>
+      <li class="Table.lesson"><a href="#lesson-1.2">Lesson 1.2: Creating a Structured Document</a>
+        <ul>
+          <li><a href="#lesson-1.2.1">Why Start With HTML and CSS</a></li>
+          <li><a href="lesson-1.2.2">How Webpages Work</a></li>
+          <li><a href="lesson-1.2.3">Page Structure</a></li>
+        </ul>
+      </li>
+      <li class="Table.lesson"><a href="#lesson-1.3">Lesson 1.3: Adding CSS Style and HTML Structure</a>
+        <ul>
+          <li><a href="#lesson-1.3.1">Styling With CSS</a></li>
+          <li><a href="#lesson-1.3.2">Inheritance</a></li>
+          <li><a href="#lesson-1.3.3">div vs. span</a></li>
+          <li><a href="#lesson-1.3.4">ID's and Classes</a></li>
+          <li><a href="#lesson-1.3.5">Benefits of Avoiding Repetition</a></li>
+          <li><a href="#lesson-1.3.6">Page Semantics</a></li>
+          <li><a href="#lesson-1.3.7">Boxes</a></li>
+          <li><a href="#lesson-1.3.8">Code, Test, Refine</a></li>
+          <li><a href="#lesson-1.3.9">Review References</a></li>
+        </ul>
+      </li>
+    </ol> 
+  </section> <!-- End of Table of Contents -->
+  <article class="lesson1"> <!-- Start of Lesson 1.1 block -->
+    <h2 id="lesson-1.1">Lesson 1.1: The Basics of the Web and HTML</h2>  
+    <div class="notegroup1" id="lesson-1.1.1">  
+      <p>
+        <span class="notetitle">World Wide Web</span><br>  <!-- Demonstrate <span> here? -->
+        The world wide web is <span class="important">a collection of HyperText Markup Language,
+        or HTML, documents.</span> There are approximately 30 billion web pages on the web 
+        currently. HTML files are not the only files that can be found on the web; one can also 
+        find files in the format of  Plain Text, Images, Video, and Music. When a person
+        searches for a web page on the internet a HTTP request is sent to a server and the
+        server relays the appropriate HTML information that is interpreted and displayed
+        by a person's web browser.<br>
+        A HTML file is made up of several parts: text content, markup, references, and links.
+        The text content is what you see. The markup is what the file looks like. It may 
+        conatain references to other documents, like images and videos. Finally, a HTML file 
+        may contain links to other web pages.
+      </p>
+    </div>
+    <div class="notegroup1" id="lesson-1.1.2">
+      <p>
+        <span class="notetitle">More About HTML</span><br>
+        One can alter the function and how a HTML file looks by using different kind of tools,
+        known as <em>Elements</em>. In this first lesson several kinds of <em>Tags</em> were demonstrated 
+        from the <b>Bold Tag</b> and the <em>Emphasis Tag</em> to tags for anchoring links and 
+        displaying images. The utilization of whitespace was also discussed via the introduction 
+        of inline and block tags. <span class="important">An inline tag can be used in the line of text. 
+        While a block tag creates an 'invisible box' between its opening and closing tags.</span> The next 
+        tool used to alter an HTML file is known as an <em>Attributes</em>. Attributes are inserted into 
+        tags and help alter the element's properties displayed on the page. There is more specific information
+        about the specific tags and attributes used in this lesson linked at the bottom of the page.
+      </p>
+    </div>
+    <div class="notegroup1" id="lesson-1.1.3">
+      <p>
+        <span class="notetitle">Dumb Computer</span><br>
+        "Computers are stupid." This means that computers won't ever do anything unless they are explicitly
+        told to do it. It is important to remember this when writing code because the computer will execute
+        code downt to the last notation; meaning that even a small mistake can keep a powerful program from
+        operating correctly.
+      </p>
+    </div>
+    <div class="notegroup1" id="lesson-1.1.4">
+      <p>
+        <span class="notetitle">More Resources</span><br>
+        <a href="http://www.w3schools.com/tags/tag_b.asp">Bold Tag</a><br>
+        <a href="http://www.w3schools.com/tags/tag_em.asp">Emphasize Tag</a><br>
+        <a href="http://www.w3schools.com/tags/tag_a.asp">Anchor Tag</a><br>
+        <a href="http://www.w3schools.com/tags/tag_img.asp">Image Tag</a><br>
+        <a href="http://www.w3schools.com/tags/tag_br.asp">Break Tag</a><br>
+        <a href="http://www.w3schools.com/tags/tag_p.asp">Paragraph Tag</a><br>
+        <a href="http://www.w3schools.com/html/html_attributes.asp"> Attributes</a>
+      </p>
+    </div>
+  </article>  <!-- End Lesson 1.1 block -->
+  <article class="lesson2">   <!-- Start Lesson 1.2 block -->
+    <h2 id="lesson-1.2">Lesson 1.2: Creating a Structured Document</h2> 
+    <div class="notegroup2" id="lesson-1.2.1">
+      <p>
+        <span class="notetitle">Why start with HTML and CSS</span><br>
+        They are one of the few types of coding that everything is 'inherently visual'. This means you can immediately
+        see what the code is doing on the web page in front of you. 
+      </p>
+    </div>
+    <div class="notegroup2" id="lesson-1.2.2">
+      <p>
+        <span class="notetitle">How Webpages Work</span><br>
+        A webpage consists of: <span class="important">HTML files as the structure for the site, CSS files style the 
+        webpage, javascript create interactive components.</span> There are more tools that are used to put them all 
+        together. All elements are rectangular and you can read the same text as on the page.
+      </p>
+    </div>
+    <div class="notegroup2" id="lesson-1.2.3">
+      <p>
+        <span class="notetitle">Page Structure</span><br>
+        The sideways triangles mean the start of another HTML element. Styles alter the way the programmer wants
+        the webpage to look. While HTML and CSS are both considered 'languages', they are responsible for different
+        parts of a web page. DOM, or Document Object Model, is a reference to the tree-like structure of the page. The 
+        box structure of a webpage helps to simplify the design process. Class attributes are labels on boxes to help 
+        organize them. Name the boxes creatively so that you can remember which box is which.
+      </p>
+    </div>
+  </article> <!-- End Lesson 1.2 block -->
+  <article class="lesson3">  <!-- Start Lesson 1.3 block -->
+    <h2 class="lesson-1.3">Lesson 1.3: Adding CSS Style and HTML Structure</h2> 
+    <div class="notegroup3" id="lesson-1.3.1">
+      <p>
+        <span class="notetitle">Styling With CSS</span><br>
+        By using CSS, one can apply different colors and themes to blocks of HTML text. <span class="important">
+        CSS stands for Cascading Style Sheets</span> the 'Cascading' part of this language means that the style will be applied 
+        to that element and all of it's child elements (This is known as <em>Inheritance</em>). You can reference several 
+        sheets per HTML file, but the most specific rules are the ones that are applied to every element. CSS generally takes 
+        the form of <em>attribute:value</em>. 
+      </p>
+    </div>
+    <div class="notegroup3" id="lesson-1.3.2">
+      <p>
+        <span class="notetitle">Inheritance</span><br>
+        This is <span class="important">the mechanism by which properties are applied to a specific element and its descendant elements.
+        </span> This system relies on the document tree, or hierarchy of HTML elements based on where they are nested. Generally, 
+        descendant elements inherit text-related properties but not box-related properties. For a list of specific properties that can 
+        and cannot be inherited, see the <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">Inheritance</a> article
+        on Wikipedia.
+      </p>
+    </div>
+    <div class="notegroup3" id="lesson-1.3.3">
+      <p>
+        <span class="notetitle">div vs. span</span><br>
+        Div tags separate blocks of HTML elements and are generally used for large areas of alterations and to create structure
+        in the HTML file. Span tags can be used in line with the rest of the text to affect smaller groups of HTML elements as 
+        opposed to the whole div section of elements. Span also can make large changes to the file without interrupting the structure
+        of the whole file. 
+      </p>
+    </div>
+    <div class="notegroup3" id="lesson-1.3.4">
+      <p>
+        <span class="notetitle">ID's and Classes</span><br>
+        ID's are used to uniquely identify an element on the webpage. ID's are not meant to be used multiple times on the same page.
+        If one wants to identify elements that have similarities then they would use Classes. Classes help to avoid repetition of code
+        on a webpage. 
+      </p>
+    </div>
+    <div class="notegroup3" id="lesson-1.3.5">
+      <p>
+        <span class="notetitle">Benefits of Avoiding Repetition</span><br>
+        If you are using several similar ID's and want to change the format and need to change all of them, it is quicker and cleaner to
+        change those IDs to a Class. You only have to make the change once as opposed to having to alter all of the similar IDs. It also
+        helps to eliminate more mistakes that may occour in your code by decreasing the amount of code that is needed to be written. 
+      </p>
+    </div>
+    <div class="notegroup3" id="lesson-1.3.6">
+      <p>
+        <span class="notetitle">Page Semantics</span><br>
+        It is important to note that, in general, all webpages and browsers try to keep the same format. This means <span class="important"> organization and Content Sectioning are vital to keeping an organized page.</span> Content Sectioning helps to highlight specific elements of the page against other parts; for example, the header tag will create a box and increase the size of the text betweent he opening
+        and closing tags. This helps to draw attention to what the following text may be about and give the viewer a better idea of what
+        they are about to read. Here is a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning">webpage</a>
+        that provides more information on the different kinds of Content Sections that are available to use.
+      </p>
+    </div>
+    <div class="notegroup3" id="lesson-1.3.7">
+      <p>
+        <span class="notetitle">Boxes</span><br>
+        The boxes that make up a webpage are broken down into a <span class="important"> margin, border, padding,
+        and content.</span> Content is the images and text that sit at the center of the website. The padding clears the 
+        area around the content. Border surrounds the padding and content. Margin is the outer layer and 
+        is effectively the space between boxes. Keep in mind the actual width of the box is the combined pixels of all
+        parts of the box and not just the content. You can limit the overall size of the box and border by using CSS
+        box-sizing command. However you may need to include specific browser information with this command (webkit, 
+        moz, ms). Setting the box size to percentages will help change the box based on the screen size. The flex element
+        allows you to put boxes side by side on a page rather than just on top of each other. This 
+        <a href="https://www.udacity.com/course/viewer#!/c-nd000/l-4131369051/m-3642758701">page</a> provides a good
+        summary for what was covered if  you need additional information. <span class="important">Images you want to use 
+        must be included in the project folder so they display correctly when called. Always include an alt attribute so 
+        that something displays if the image is not called correctly.</span>
+      </p>
+    </div>
+    <div class="notegroup3" id="lesson-1.3.8">
+      <p>
+        <span class="notetitle">Code, Test, Refine</span><br>
+        Five things to look for when refining your code are:<br>
+        1. Find the natural boxes<br>2. Find repeated style and semantic elements<br>3. Write the HTML<br>4. Apply the
+        styles from biggest to smallest in change<br>5. Fix the leftover issues.<br>Applications like Chrome's DevTools
+        help to make altering the appearance of your webpage simpler. 
+      </p>
+    </div>
+    <div class="notegroup3" id="lesson-1.3.9">
+      <p>
+        <span class="notetitle">Quick Review References</span><br>
+        <a href="https://www.udacity.com/course/viewer#!/c-nd000/l-4131369051/m-3611108698">CSS Review</a><br>
+        <a href="https://plus.google.com/events/cb4erijb0rfeen0c95mcutu1mfo?authkey=CM6vuqD859S5NQ">div, span, ID, and Class Review</a><br>
+        <a href="http://learn-2-code.appspot.com/additional_resources/#topic-1">Andy's Resource Page</a><br>
+      </p>
+    </div>
+  </article> <!-- End Lesson 1.3 block -->  
+</body>
